@@ -1,4 +1,3 @@
-alert("signup.js loaded");
 
 
 document.getElementById("signinform").addEventListener("submit", function(event){
