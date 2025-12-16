@@ -1,6 +1,37 @@
-<html>
 <body>
-    <main>
+    <main class="d-flex align-items-center justify-content-center">
+        <div class="card shadow-sm border-0 w-100 login-card">
+            <div class="card-body p-4 p-md-5">
+                <h2 class="mb-4 text-center">Sign Up</h2>
+                <form id="signinform">
+                    <div class="mb-4">
+                        <label for="InputName" class="form-label">Name</label>
+                        <input required type="text" class="form-control form-control-lg" id="InputName"
+                            placeholder="Enter Username">
+                    </div>
+                    <div class="mb-4">
+                        <label for="InputEmail" class="form-label">Email address</label>
+                        <input required type="email" class="form-control form-control-lg" id="InputEmail"
+                            placeholder="name@example.com">
+                        <div class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-4">
+                        <label for="InputPassword" class="form-label">Password</label>
+                        <input required type="password" class="form-control form-control-lg" id="InputPassword"
+                            placeholder="Enter Password">
+                    </div>
+                    <div class="mb-4">
+                        <label for="InputPassword2" class="form-label">Confirm Password</label>
+                        <input required type="password" class="form-control form-control-lg" id="InputPassword2"
+                            placeholder="Confirm Password">
+                    </div>
+                    <button type="submit" class="btn btn-dark btn-lg w-100" id="submit">Submit</button>
+                </form>
+                <p class="text-center mt-3 mb-0">
+                    Already have an account? <a href="/signup">Click here!</a>
+                </p>
+            </div>
+        </div>
     </main>
+    <script src="signup.js"></script>
 </body>
-</html>

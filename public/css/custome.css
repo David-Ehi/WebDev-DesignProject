@@ -4,38 +4,55 @@
   box-sizing: border-box;
 }
 
+html, body {
+  height: 100%;
+}
+
 body {
   font-family: "Inter", sans-serif;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  width: 100%;
+  max-width: 100%;
+  flex: 1;
 }
 
 #logotext {
-  align-items: right;
-  justify-content: right;
+  height: 48px;
+  width: auto;
 }
 
+@media (max-width: 767px) {
+  .navbar-toggler {
+    position: relative;
+    z-index: 2;
+  }
+  #logotext {
+    position: absolute;
+    left: 50%;
+    height: 80px;
+    transform: translateX(-50%);
+  }
+  .nav-link {
+    font-size: 1.25rem;
+  }
+}
 .card-title {
-  font-size: 70px;
+  font-size: 2rem;
 }
 
 .card-text {
-  font-size: 40px;
+  font-size: 1rem;
 }
 
-@media (max-width: 992px) {
-  #logotext {
-    width: 70%;
-    height: auto;
-    padding-right: 25%;
-  }
-  .nav-link {
-    font-size: 50px;
-  }
-}
 .dropdown {
   border: 300px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 767px) {
   .navbar .container-fluid {
     display: flex;
     align-items: center;
@@ -53,10 +70,10 @@ body {
     width: 20%;
   }
   .card-title {
-    font-size: 25px;
+    font-size: 1.5rem;
   }
   .card-text {
-    font-size: 16px;
+    font-size: 1rem;
   }
 }
 .navbar-toggler {
@@ -86,4 +103,22 @@ footer {
 
 .login {
   padding: 30px;
+}
+
+.formtext {
+  padding-top: 10px;
+}
+
+.login-card {
+  width: 100%;
+  max-width: 420px;
+}
+
+@media (max-width: 576px) {
+  .login-card {
+    max-width: 95vw;
+  }
+}
+.nav-link.active {
+  text-decoration: underline;
 }/*# sourceMappingURL=custome.css.map */
