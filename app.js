@@ -54,6 +54,12 @@ app.get('/signup', (req, res) => {
   res.render('signup', { state, head });
 });
 
+app.get('/logout', (req, res) => {
+  state = { index: false, products: false, login: false, basket: false, logout: true };
+  head = { title: "Logout" };
+  res.render('logout', { state, head });
+});
+
 app.use(express.static("public"));
 
 app.listen(3000, () => {
