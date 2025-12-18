@@ -50,7 +50,7 @@ app.get('/thankyou', (req, res) => {
 
 app.get('/signup', (req, res) => {
   state = { index: false, products: false, login: false, basket: false, signup: true };
-  head = { title: "Login", description: "Sign Up page", keywords: "signup" };
+  head = { title: "Sign Up", description: "Sign Up page", keywords: "signup" };
   res.render('signup', { state, head });
 });
 

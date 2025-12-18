@@ -1,85 +1,17 @@
 <main class="container py-5">
+    <div class="container py-5">
+  <h1 class="text-center mb-5 display-4">Our Gaming PCs</h1>
 
-    <h1 class="text-center mb-5 display-4">Our Gaming PCs</h1>
-
-    <div class="container">
-  <div class="row g-2">
-    <div class="col-md-6  col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">AMD High End PC - Rift Titan</h4>
-          <p class="card-text">This is our high end model boasting only the highest tier parts such as the RTX 5090 and the 9950X3D</p>
-          
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-
-      <div class="col-md-6  col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">AMD Meduim End PC - Rift</h4>
-          <p class="card-text">Some example text.</p>
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">AMD Low End PC - Rift Mini</h4>
-          <p class="card-text">Some example text.</p>
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="col-md-6  col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Intel High End PC</h4>
-          <p class="card-text">Some example text.</p>
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="col-md-6 col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Intel High End PC</h4>
-          <p class="card-text">Some example text.</p>
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-
-        <div class="col-md-6 col-lg-4">
-      <div class="card h-100 hoveranim">
-        <img class="card-img-top" src="https://placehold.co/500x500" alt="Card image">
-        <div class="card-body">
-          <h4 class="card-title">Intel High End PC</h4>
-          <p class="card-text">Some example text.</p>
-          <button type="button" class="btn btn-dark">Add To Cart</button>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+  <div class="row g-2" id="productRow"></div>
 </div>
 
+
+<div class="container mt-4">
+  <h3>Cart (<span id="cartCount">0</span>)</h3>
+  <ul id="cartList" class="list-group"></ul>
+</div>
 </main>
 
 <script src="nav.js"></script>
+<script src="products.js"></script>
+

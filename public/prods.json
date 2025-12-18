@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "AMD High End PC - Rift Titan",
+    "description": "RTX 5090 paired with the Ryzen 9 9950X3D for extreme performance.",
+    "image": "https://placehold.co/500x500",
+    "price": 4999
+  },
+  {
+    "id": 2,
+    "name": "AMD Medium End PC - Rift",
+    "description": "Balanced gaming performance for high refresh rate gaming.",
+    "image": "https://placehold.co/500x500",
+    "price": 2499
+  },
+  {
+    "id": 3,
+    "name": "AMD Low End PC - Rift Mini",
+    "description": "Entry-level gaming PC perfect for esports titles.",
+    "image": "https://placehold.co/500x500",
+    "price": 1299
+  },
+  {
+    "id": 4,
+    "name": "Intel High End PC - Apex",
+    "description": "Flagship Intel build for enthusiasts.",
+    "image": "https://placehold.co/500x500",
+    "price": 4799
+  },
+    {
+    "id": 5,
+    "name": "Intel Medium End PC - Nova",
+    "description": "Strong 1440p gaming performance with modern Intel architecture, ideal for competitive and AAA titles.",
+    "image": "https://placehold.co/500x500",
+    "price": 2399
+  },
+  {
+    "id": 6,
+    "name": "Intel Low End PC - Core Mini",
+    "description": "Affordable Intel-based gaming PC designed for esports and everyday gaming.",
+    "image": "https://placehold.co/500x500",
+    "price": 1199
+  }
+]
