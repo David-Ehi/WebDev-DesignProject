@@ -72,6 +72,12 @@ app.get('/thankyou', (req, res) => {
   res.render('thankyou', { state, head });
 });
 
+app.get('/aboutus', (req, res) => {
+  state = { index: false, products: false, login: false, basket: false, logout: false, payment: false, aboutus: true };
+  head = { title: "About Us" };
+  res.render('aboutus', { state, head });
+});
+
 app.use(express.static("public"));
 
 app.listen(3000, () => {
