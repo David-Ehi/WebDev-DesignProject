@@ -37,14 +37,14 @@ app.get('/login', (req, res) => {
 
 app.get('/basket', (req, res) => {
   state = { index: false, products: false, login: false, basket: true, signup: false };
-  head = { title: "Basket", description: "Your basket", keywords: "basket, cart" };
+  head = { title: "Basket", description: "Your basket", keywords: "basket, cart, checkout" };
   res.render('basket', { state, head });
 });
 
 app.get('/thankyou', (req, res) => {
   const { name, email, message } = req.query;
   state = { index: false, products: false, login: false, basket: false, thankyou: true, signup: false };
-  head = { title: "Thank You" };
+  head = { title: "Thank You", description: "Thank you for your purchace", keywords: "thanks, thank you"  };
   res.render('thankyou', { state, head, name, email, message });
 });
 
@@ -56,25 +56,19 @@ app.get('/signup', (req, res) => {
 
 app.get('/logout', (req, res) => {
   state = { index: false, products: false, login: false, basket: false, logout: true };
-  head = { title: "Logout" };
+  head = { title: "Logout", description: "Logout page", keywords: "log out, sign out"  };
   res.render('logout', { state, head });
 });
 
 app.get('/payment', (req, res) => {
   state = { index: false, products: false, login: false, basket: false, logout: false, payment: true };
-  head = { title: "Payment" };
+  head = { title: "Payment", description: "Enter card details", keywords: "card details, payment, pay, purchace" };
   res.render('payment', { state, head });
-});
-
-app.get('/thankyou', (req, res) => {
-  state = { index: false, products: false, login: false, basket: false, logout: false, payment: true };
-  head = { title: "Thank you for your purchace" };
-  res.render('thankyou', { state, head });
 });
 
 app.get('/aboutus', (req, res) => {
   state = { index: false, products: false, login: false, basket: false, logout: false, payment: false, aboutus: true };
-  head = { title: "About Us" };
+  head = { title: "About Us", description: "About our company", keywords: "about, info, information, contact"  };
   res.render('aboutus', { state, head });
 });
 
