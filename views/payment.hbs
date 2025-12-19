@@ -1,0 +1,39 @@
+<main class="d-flex align-items-center justify-content-center">
+  <div class="card shadow-sm border-0 w-100 login-card">
+    <div class="card-body p-4 p-md-5">
+
+      <h2 class="mb-4 text-center">Payment</h2>
+
+      <form id="paymentForm">
+
+        <div class="mb-4">
+          <label for="cardName" class="form-label">Name on Card</label>
+          <input type="text" class="form-control form-control-lg" id="cardName" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="cardNumber" class="form-label">Card Number</label>
+          <input type="text" class="form-control form-control-lg" id="cardNumber" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="expiry" class="form-label">Expiry Date</label>
+          <input type="text" class="form-control form-control-lg" id="expiry" placeholder="MM/YY" required>
+        </div>
+
+        <div class="mb-4">
+          <label for="cvc" class="form-label">CVC</label>
+          <input type="text" class="form-control form-control-lg" id="cvc" required>
+        </div>
+
+        <a href="/thankyou" type="submit" class="btn btn-dark btn-lg w-100">
+          Pay Now
+        </a>
+
+      </form>
+
+    </div>
+  </div>
+</main>
+
+<script src="payment.js"></script>

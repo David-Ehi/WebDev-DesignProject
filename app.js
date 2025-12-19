@@ -60,6 +60,18 @@ app.get('/logout', (req, res) => {
   res.render('logout', { state, head });
 });
 
+app.get('/payment', (req, res) => {
+  state = { index: false, products: false, login: false, basket: false, logout: false, payment: true };
+  head = { title: "Payment" };
+  res.render('payment', { state, head });
+});
+
+app.get('/thankyou', (req, res) => {
+  state = { index: false, products: false, login: false, basket: false, logout: false, payment: true };
+  head = { title: "Thank you for your purchace" };
+  res.render('thankyou', { state, head });
+});
+
 app.use(express.static("public"));
 
 app.listen(3000, () => {
